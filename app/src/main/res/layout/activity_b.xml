@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_b"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.koshik.sharedpreferencesexamples.ActivityB">
+
+
+    <TextView
+        android:id="@+id/tvusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="54dp"
+        android:text="UserName" />
+
+    <TextView
+        android:id="@+id/tvpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvusername"
+        android:layout_alignRight="@+id/tvusername"
+        android:layout_below="@+id/tvusername"
+        android:layout_marginTop="37dp"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvpassword"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_toRightOf="@+id/tvusername"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvpassword"
+        android:layout_alignBottom="@+id/tvpassword"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_toRightOf="@+id/tvpassword"
+        android:hint="password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvpassword"
+        android:layout_alignStart="@+id/tvpassword"
+        android:layout_below="@+id/etpassword"
+        android:layout_marginTop="20dp"
+        android:onClick="Load"
+        android:text="Load" />
+
+    <Button
+        android:id="@+id/btngotoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnload"
+        android:layout_alignBottom="@+id/btnload"
+        android:layout_alignLeft="@+id/etname"
+        android:layout_alignStart="@+id/etname"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:onClick="Previous"
+        android:text="Go to A" />
+</RelativeLayout>

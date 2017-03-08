@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.koshik.sharedpreferencesexamples.MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="54dp"
+        android:text="UserName" />
+
+    <TextView
+        android:id="@+id/tvpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvusername"
+        android:layout_alignRight="@+id/tvusername"
+        android:layout_below="@+id/tvusername"
+        android:layout_marginTop="37dp"
+        android:text="Password" />
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Save"
+        android:text="Save"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/tvpassword"
+        android:layout_alignLeft="@+id/tvpassword"
+        android:layout_alignStart="@+id/tvpassword" />
+
+    <Button
+        android:id="@+id/btngotob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:onClick="Next"
+        android:text="Go to B"
+        android:layout_alignTop="@+id/btnsave"
+        android:layout_alignLeft="@+id/etname"
+        android:layout_alignStart="@+id/etname" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="password"
+        android:id="@+id/etpassword"
+        android:layout_above="@+id/btnsave"
+        android:layout_alignLeft="@+id/etname"
+        android:layout_alignStart="@+id/etname" />
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_alignBaseline="@+id/tvusername"
+        android:layout_alignBottom="@+id/tvusername"
+        android:layout_toRightOf="@+id/btnsave"
+        android:layout_toEndOf="@+id/btnsave" />
+</RelativeLayout>
